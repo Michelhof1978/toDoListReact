@@ -7,8 +7,8 @@ export default function Form(){
     //State
     const [dataArray, setDataArray] = useState([//Création du state sous forme de tableau
         {txt: "Faire les courses" , id: uuidv4()}, //On execute uuid pour que les items par la suite soient bien indexés et avoir un Id unique
-        {txt: "Aller chez le docteur" , id: uuidv4()},//L'Id unique sera sous forme '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
-        {txt: "Avoir mon diplôme" , id: uuidv4()},
+        {txt: "Sport" , id: uuidv4()},//L'Id unique sera sous forme '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+        {txt: "Coder avec React" , id: uuidv4()},
     ])
 
     // -------------------------------------------------------------------------------------------------------------------------
