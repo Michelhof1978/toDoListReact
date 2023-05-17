@@ -10,7 +10,7 @@ export default function Item(props) {
             <button className="btn btn-danger p-2 h-50"
              onClick={() => props.supItem(props.id)}
              // Evenement lors du clic , Dés qu on a des arguments à passer, on passe par une fonction anonyme
-             // On va pouvoir supprimer l Id ciblé que l on souhaite grâce à la fonction supElement déclarer en props supItem 
+             // On va pouvoir supprimer l Id ciblé que l on souhaite grâce à la fonction  
            >Supprimer
            </button>
 

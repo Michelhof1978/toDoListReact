@@ -59,7 +59,7 @@ export default function Form(){
                 <label htmlFor="todo" className="form-label mt-3">Chose à faire</label>
 
                 <input 
-                value={newStateInput}//Value => nouveau state
+                value={newStateInput}//Value => 
                 onChange={e => linkedEventInput(e.target.value)}
                 // e.target est une référence à l'objet qui a envoyé l'événement.Lorsque le gestionnaire d'événements est appelé au 
                 // cours de la phase de propagation ou de la phase de capture de l'événement.

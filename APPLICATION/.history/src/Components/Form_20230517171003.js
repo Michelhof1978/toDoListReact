@@ -59,10 +59,9 @@ export default function Form(){
                 <label htmlFor="todo" className="form-label mt-3">Chose à faire</label>
 
                 <input 
-                value={newStateInput}//Value => nouveau state
+                value={newStateInput}
                 onChange={e => linkedEventInput(e.target.value)}
-                // e.target est une référence à l'objet qui a envoyé l'événement.Lorsque le gestionnaire d'événements est appelé au 
-                // cours de la phase de propagation ou de la phase de capture de l'événement.
+                e.targetest une référence à l'objet qui a envoyé l'événement. C'est une propriété différente de event.currentTarget lorsque le gestionnaire d'événements est appelé au cours de la phase de propagation ou de la phase de capture de l'événement.
                 type="text" 
                 className="form-control" 
                 id="todo"/>
@@ -72,7 +71,6 @@ export default function Form(){
  {/* ------------------------------------------------------------------------------------------------------------------------- */}
           
             <h2>Liste des choses à daire : </h2>
-
             <ul className="list-group"> {/*On retourne une liste avec les Items grâce à la classe list-group de bootstrap */}
                 {dataArray.map(item => {// map va retourner un nouveau tableau ,item est un paramètre de la fonction de rappel utilisée dans la méthode map()
                     return (

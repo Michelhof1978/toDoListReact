@@ -44,7 +44,7 @@ export default function Form(){
         setNewStateInput('')//On remets l input du formulaire à zéro lors du clic envoyer pour une meilleure expérience utilisateurs
     }
 
-    const linkedEventInput = e => {//On fait appel à un événement pour que lorsque du clic envoyer, l input se vide
+    const linkedEInput = e => {
         setNewStateInput(e);
 
     }
@@ -55,14 +55,10 @@ export default function Form(){
         <div className="m-auto px-4 col-12 col-sm-10 col-lg-6">
 
 <form onSubmit={e => addTodoList(e)} className="mb-3">
-
                 <label htmlFor="todo" className="form-label mt-3">Chose à faire</label>
-
                 <input 
-                value={newStateInput}//Value => nouveau state
-                onChange={e => linkedEventInput(e.target.value)}
-                // e.target est une référence à l'objet qui a envoyé l'événement.Lorsque le gestionnaire d'événements est appelé au 
-                // cours de la phase de propagation ou de la phase de capture de l'événement.
+                value={newStateInput}
+                onChange={e => linkedInput(e.target.value)}
                 type="text" 
                 className="form-control" 
                 id="todo"/>
@@ -72,7 +68,6 @@ export default function Form(){
  {/* ------------------------------------------------------------------------------------------------------------------------- */}
           
             <h2>Liste des choses à daire : </h2>
-
             <ul className="list-group"> {/*On retourne une liste avec les Items grâce à la classe list-group de bootstrap */}
                 {dataArray.map(item => {// map va retourner un nouveau tableau ,item est un paramètre de la fonction de rappel utilisée dans la méthode map()
                     return (
@@ -80,7 +75,7 @@ export default function Form(){
                         txt={item.txt} 
                         key={item.id}//Une clé différente pour chaque élément item (uniquement pour react)
                         id={item.id}//Id unique grâce à uuid
-                        supItem={supElement}//Création props pour pouvoir appeler la fonction supElement ds item.js lors du clic bouton supprimer
+                        supItem={supElement}
                         />
                     )
                 })}
