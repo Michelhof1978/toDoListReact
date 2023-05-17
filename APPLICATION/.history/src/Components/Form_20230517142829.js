@@ -17,7 +17,7 @@ export default function Form(){
         const filteredState = dataArr.filter(item => {//dataArr.filter => méthode pour filtrer un tableau
             return item.id !== id;//On retourne un nouveau tableau avec les id d item différents des id qu on aura cliqué
         })
-        setDataArr(filteredState)// On actualise et on remets à jour, lors du clic sur boutton pour supprimer, l item va disparaître
+        setDataArr(filteredState)
     }
 
     return (

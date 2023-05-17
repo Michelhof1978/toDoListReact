@@ -11,13 +11,13 @@ export default function Form(){
         {txt: "Coder avec React" , id: uuidv4()},
     ])
 
-    //Suppression des Items
+    //Suppression
     const deleteElement = id => {//On passe cette fonction en props
         // console.log(id);
-        const filteredState = dataArr.filter(item => {//dataArr.filter => méthode pour filtrer un tableau
-            return item.id !== id;//On retourne un nouveau tableau avec les id d item différents des id qu on aura cliqué
+        const filteredState = dataArr.filter(item => {
+            return item.id !== id;
         })
-        setDataArr(filteredState)// On actualise et on remets à jour, lors du clic sur boutton pour supprimer, l item va disparaître
+        setDataArr(filteredState)
     }
 
     return (
@@ -37,7 +37,7 @@ export default function Form(){
                     return (
                         <Item //On insère les items qui sont des li ds le ul
                         txt={item.txt} 
-                        key={item.id}//Une clé différente pour chaque élément item (uniquement pour react)
+                        key={index.id}//Une clé différente pour chaque élément item
                         id={item.id}//Id unique grâce à uuid
                         delFunc={deleteElement}
                         />
