@@ -89,38 +89,38 @@ export default function Form(){
 
     )
 }
-// //State (État) :
-// La première partie du code est consacrée à la création de l'état de l'application à l'aide du 
-// hook useState.
-//     -dataArray est le tableau qui contient les différentes tâches à faire. Chaque tâche est un objet 
-// contenant un texte (txt) et un identifiant unique (id) généré par la fonction uuidv4.
-//     -newStateInput est un autre état qui contient la valeur de l'input du formulaire. Il est 
-// initialisé comme vide.
+//State (État) :
+La première partie du code est consacrée à la création de l'état de l'application à l'aide du 
+hook useState.
+    -dataArray est le tableau qui contient les différentes tâches à faire. Chaque tâche est un objet 
+contenant un texte (txt) et un identifiant unique (id) généré par la fonction uuidv4.
+    -newStateInput est un autre état qui contient la valeur de l'input du formulaire. Il est 
+initialisé comme vide.
 
-// Fonction supElement :
-// Cette fonction est utilisée pour supprimer une tâche. Elle prend en paramètre un id et filtre le
-//  tableau dataArray pour créer un nouveau tableau sans la tâche ayant cet identifiant. Ensuite,
-//   elle met à jour dataArray avec ce nouveau tableau.
+Fonction supElement :
+Cette fonction est utilisée pour supprimer une tâche. Elle prend en paramètre un id et filtre le
+ tableau dataArray pour créer un nouveau tableau sans la tâche ayant cet identifiant. Ensuite,
+  elle met à jour dataArray avec ce nouveau tableau.
 
-// Fonction addTodoList :
-// Cette fonction est déclenchée lorsque l'utilisateur soumet le formulaire. Elle crée un nouvel 
-// objet newTodoList avec le texte entré par l'utilisateur et un nouvel identifiant unique, puis l'ajoute au tableau dataArray. Ensuite, elle réinitialise newStateInput à vide.
+Fonction addTodoList :
+Cette fonction est déclenchée lorsque l'utilisateur soumet le formulaire. Elle crée un nouvel 
+objet newTodoList avec le texte entré par l'utilisateur et un nouvel identifiant unique, puis l'ajoute au tableau dataArray. Ensuite, elle réinitialise newStateInput à vide.
 
-// Fonction linkedEventInput :
-// Cette fonction est utilisée pour mettre à jour newStateInput chaque fois que l'utilisateur tape
-//  dans l'input du formulaire.
+Fonction linkedEventInput :
+Cette fonction est utilisée pour mettre à jour newStateInput chaque fois que l'utilisateur tape
+ dans l'input du formulaire.
 
-// Rendu (Render) :
-// Enfin, la fonction retourne le JSX (syntaxe similaire à HTML utilisée par React) à afficher à 
-// l'écran.
-//     -Il y a d'abord un formulaire où l'utilisateur peut entrer une nouvelle tâche et la soumettre.
-//     -Ensuite, il y a une liste des tâches existantes. Pour chaque objet dans dataArray, un 
-//     composant Item est rendu, avec le texte de la tâche, l'identifiant, et la fonction supElement passés en props.
+Rendu (Render) :
+Enfin, la fonction retourne le JSX (syntaxe similaire à HTML utilisée par React) à afficher à 
+l'écran.
+    -Il y a d'abord un formulaire où l'utilisateur peut entrer une nouvelle tâche et la soumettre.
+    -Ensuite, il y a une liste des tâches existantes. Pour chaque objet dans dataArray, un 
+    composant Item est rendu, avec le texte de la tâche, l'identifiant, et la fonction supElement passés en props.
 
-// Le code dans son ensemble représente donc un composant React qui permet à l'utilisateur de saisir,
-//  afficher, et supprimer des tâches.
-
+Le code dans son ensemble représente donc un composant React qui permet à l'utilisateur de saisir, afficher, et supprimer des tâches.
 
 
 
 
+
+Regenerate response
